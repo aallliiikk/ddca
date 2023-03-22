@@ -29,7 +29,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log FourBitAdder.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source FourBitAdder.tcl -notrace" );
+         "-log FourBitAdderSegmented.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source FourBitAdderSegmented.tcl -notrace" );
 
 
 

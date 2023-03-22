@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/alik/repos/Vivado/t2/t2.runs/synth_1'
+HD_PWD='/home/alik/repos/DDCA/t2/t2.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log FourBitAdder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FourBitAdder.tcl
+EAStep vivado -log FourBitAdderSegmented.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FourBitAdderSegmented.tcl

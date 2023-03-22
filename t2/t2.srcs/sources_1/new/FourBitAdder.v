@@ -21,16 +21,16 @@
 
 
 module FourBitAdder(
-input[3:0] a,
-input[3:0] b,
+input[3:0] A,
+input[3:0] B,
 output[4:0] s
     );
     
     wire c1, c2, c3;
     
-    FullAdder bitone(a[0], b[0], 1'b0, s[0], c1);
-    FullAdder bittwo(a[1], b[1], c1, s[1], c2);
-    FullAdder bitthree(a[2], b[2], c2, s[2], c3);
-    FullAdder bitfour(a[3], b[3], c3, s[3], s[4]);
+    FullAdder bitone(A[0], B[0], 1'b0, s[0], c1);
+    FullAdder bittwo(A[1], B[1], c1, s[1], c2);
+    FullAdder bitthree(A[2], B[2], c2, s[2], c3);
+    FullAdder bitfour(A[3], B[3], c3, s[3], s[4]);
     
 endmodule
