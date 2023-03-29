@@ -69,7 +69,7 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
   set_param xicom.use_bs_reader 1
-  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-149527-goon/incrSyn
+  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-1097-goon/incrSyn
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
