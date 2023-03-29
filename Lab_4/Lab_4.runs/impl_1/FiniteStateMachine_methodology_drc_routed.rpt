@@ -1,0 +1,102 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Mar 29 17:58:23 2023
+| Host         : slabhg158 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file FiniteStateMachine_methodology_drc_routed.rpt -pb FiniteStateMachine_methodology_drc_routed.pb -rpx FiniteStateMachine_methodology_drc_routed.rpx
+| Design       : FiniteStateMachine
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 13
++-----------+------------------+-------------------------------+------------+
+| Rule      | Severity         | Description                   | Violations |
++-----------+------------------+-------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 3          |
+| TIMING-18 | Warning          | Missing input or output delay | 1          |
+| TIMING-20 | Warning          | Non-clocked latch             | 9          |
++-----------+------------------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin m2/state_p_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin m2/state_p_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin m2/state_p_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on reset relative to clock(s) clk
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch m1/state_n_reg[0] cannot be properly analyzed as its control pin m1/state_n_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch m1/state_n_reg[1] cannot be properly analyzed as its control pin m1/state_n_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch m1/state_n_reg[2] cannot be properly analyzed as its control pin m1/state_n_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch m3/ledLeft_reg[0] cannot be properly analyzed as its control pin m3/ledLeft_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch m3/ledLeft_reg[1] cannot be properly analyzed as its control pin m3/ledLeft_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch m3/ledLeft_reg[2] cannot be properly analyzed as its control pin m3/ledLeft_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch m3/ledRight_reg[0] cannot be properly analyzed as its control pin m3/ledRight_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch m3/ledRight_reg[1] cannot be properly analyzed as its control pin m3/ledRight_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch m3/ledRight_reg[2] cannot be properly analyzed as its control pin m3/ledRight_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+
