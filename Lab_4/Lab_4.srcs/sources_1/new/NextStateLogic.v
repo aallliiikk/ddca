@@ -11,12 +11,16 @@ module NextStateLogic(
     always @ (*) begin
         case(state_p)
             3'b000 : begin
-                        if(left) begin
+                        if(!right && left) begin
                             state_n <= 3'b001;
                             end
-                        if(right &&  !left) begin
+                        else if(right && !left) begin
                             state_n <= 3'b100;
                             end
+                        else if(right && left) 
+                            state_n <= 3'b001;
+                        else 
+                            state_n <= 3'b000;
                         end
                         
             3'b001 : state_n <= 3'b010;
