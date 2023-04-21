@@ -26,8 +26,8 @@ module FiniteStateMachine(
     input right,
     input reset,
     
-    output [0:2] ledLeft,
-    output [0:2] ledRight
+    output [2:0] ledLeft,
+    output [2:0] ledRight
     );
     
     wire clk_en;

@@ -17,8 +17,9 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 1
+set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
+set_param synth.incrementalSynthesisCache ./.Xil/Vivado-586522-goon/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
@@ -26,18 +27,18 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/nimbes/ddca/Lab_4/Lab_4.cache/wt [current_project]
-set_property parent.project_path /home/nimbes/ddca/Lab_4/Lab_4.xpr [current_project]
+set_property webtalk.parent_dir /home/alik/repos/DDCA/Lab_4/Lab_4.cache/wt [current_project]
+set_property parent.project_path /home/alik/repos/DDCA/Lab_4/Lab_4.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo /home/nimbes/ddca/Lab_4/Lab_4.cache/ip [current_project]
+set_property ip_output_repo /home/alik/repos/DDCA/Lab_4/Lab_4.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  /home/nimbes/ddca/Lab_4/Lab_4.srcs/sources_1/new/NextStateLogic.v
-  /home/nimbes/ddca/Lab_4/Lab_4.srcs/sources_1/new/OutputLogic.v
-  /home/nimbes/ddca/Lab_4/Lab_4.srcs/sources_1/new/StateRegister.v
-  /home/nimbes/ddca/Lab_4/Lab_4.srcs/sources_1/new/clk_div.v
-  /home/nimbes/ddca/Lab_4/Lab_4.srcs/sources_1/new/FiniteStateMachine.v
+  /home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/NextStateLogic.v
+  /home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/OutputLogic.v
+  /home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/StateRegister.v
+  /home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/clk_div.v
+  /home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/FiniteStateMachine.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -47,8 +48,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/nimbes/ddca/Lab_4/Lab_4.srcs/constrs_1/new/constr.xdc
-set_property used_in_implementation false [get_files /home/nimbes/ddca/Lab_4/Lab_4.srcs/constrs_1/new/constr.xdc]
+read_xdc /home/alik/repos/DDCA/Lab_4/Lab_4.srcs/constrs_1/new/constr.xdc
+set_property used_in_implementation false [get_files /home/alik/repos/DDCA/Lab_4/Lab_4.srcs/constrs_1/new/constr.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

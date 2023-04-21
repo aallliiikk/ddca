@@ -7,9 +7,9 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/home/nimbes/Applications/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/lin64:/home/nimbes/Applications/Xilinx/Vivado/2019.2/bin
+  PATH=/mnt/Xilinx-install/Vivado/2019.2/ids_lite/ISE/bin/lin64:/mnt/Xilinx-install/Vivado/2019.2/bin
 else
-  PATH=/home/nimbes/Applications/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/lin64:/home/nimbes/Applications/Xilinx/Vivado/2019.2/bin:$PATH
+  PATH=/mnt/Xilinx-install/Vivado/2019.2/ids_lite/ISE/bin/lin64:/mnt/Xilinx-install/Vivado/2019.2/bin:$PATH
 fi
 export PATH
 
@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/nimbes/ddca/Lab_4/Lab_4.runs/impl_1'
+HD_PWD='/home/alik/repos/DDCA/Lab_4/Lab_4.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

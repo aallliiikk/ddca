@@ -67,17 +67,18 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 1
+  set_param chipscope.maxJobs 2
   set_param xicom.use_bs_reader 1
+  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-484658-goon/incrSyn
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/nimbes/ddca/lab_report_3/t2.cache/wt [current_project]
-  set_property parent.project_path /home/nimbes/ddca/lab_report_3/t2.xpr [current_project]
-  set_property ip_output_repo /home/nimbes/ddca/lab_report_3/t2.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/alik/repos/DDCA/lab_report_3/t2.cache/wt [current_project]
+  set_property parent.project_path /home/alik/repos/DDCA/lab_report_3/t2.xpr [current_project]
+  set_property ip_output_repo /home/alik/repos/DDCA/lab_report_3/t2.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet /home/nimbes/ddca/lab_report_3/t2.runs/synth_1/FourBitAdderSegmentedChoseDisplay.dcp
-  read_xdc /home/nimbes/ddca/lab_report_3/t2.srcs/constrs_1/new/const.xdc
+  add_files -quiet /home/alik/repos/DDCA/lab_report_3/t2.runs/synth_1/FourBitAdderSegmentedChoseDisplay.dcp
+  read_xdc /home/alik/repos/DDCA/lab_report_3/t2.srcs/constrs_1/new/const.xdc
   link_design -top FourBitAdderSegmentedChoseDisplay -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

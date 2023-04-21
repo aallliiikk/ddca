@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Thu Mar 30 12:34:26 2023
-| Host         : machina running 64-bit Pop!_OS 22.04 LTS
+| Date         : Wed Apr 19 16:44:32 2023
+| Host         : goon running 64-bit EndeavourOS Linux
 | Command      : report_drc -file FiniteStateMachine_drc_opted.rpt -pb FiniteStateMachine_drc_opted.pb -rpx FiniteStateMachine_drc_opted.rpx
 | Design       : FiniteStateMachine
 | Device       : xc7a35tcpg236-1

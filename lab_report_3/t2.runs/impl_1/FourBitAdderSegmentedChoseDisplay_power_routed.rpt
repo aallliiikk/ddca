@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date             : Wed Mar 29 00:05:11 2023
-| Host             : machina running 64-bit Pop!_OS 22.04 LTS
+| Date             : Wed Mar 29 16:36:10 2023
+| Host             : goon running 64-bit EndeavourOS Linux
 | Command          : report_power -file FourBitAdderSegmentedChoseDisplay_power_routed.rpt -pb FourBitAdderSegmentedChoseDisplay_power_summary_routed.pb -rpx FourBitAdderSegmentedChoseDisplay_power_routed.rpx
 | Design           : FourBitAdderSegmentedChoseDisplay
 | Device           : xc7a35tcpg236-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 13.842 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 18.086 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 13.622                           |
-| Device Static (W)        | 0.221                            |
+| Dynamic (W)              | 17.707                           |
+| Device Static (W)        | 0.379                            |
 | Effective TJA (C/W)      | 5.0                              |
-| Max Ambient (C)          | 15.8                             |
-| Junction Temperature (C) | 94.2                             |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 115.4                            |
 | Confidence Level         | Low                              |
 | Setting File             | ---                              |
 | Simulation Activity File | ---                              |
@@ -52,12 +52,12 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.077 |       17 |       --- |             --- |
-|   LUT as Logic |     0.077 |       14 |     20800 |            0.07 |
-| Signals        |     0.275 |       27 |       --- |             --- |
-| I/O            |    13.270 |       22 |       106 |           20.75 |
-| Static Power   |     0.221 |          |           |                 |
-| Total          |    13.842 |          |           |                 |
+| Slice Logic    |     0.086 |       16 |       --- |             --- |
+|   LUT as Logic |     0.086 |       13 |     20800 |            0.06 |
+| Signals        |     0.318 |       26 |       --- |             --- |
+| I/O            |    17.303 |       22 |       106 |           20.75 |
+| Static Power   |     0.379 |          |           |                 |
+| Total          |    18.086 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,16 +67,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.522 |       0.392 |      0.130 |
-| Vccaux    |       1.800 |     0.512 |       0.485 |      0.027 |
-| Vcco33    |       3.300 |     3.746 |       3.745 |      0.001 |
+| Vccint    |       1.000 |     0.700 |       0.444 |      0.256 |
+| Vccaux    |       1.800 |     0.675 |       0.633 |      0.043 |
+| Vcco33    |       3.300 |     4.887 |       4.886 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.003 |       0.000 |      0.003 |
+| Vccbram   |       1.000 |     0.007 |       0.000 |      0.007 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -134,7 +134,7 @@ Table of Contents
 +-----------------------------------+-----------+
 | Name                              | Power (W) |
 +-----------------------------------+-----------+
-| FourBitAdderSegmentedChoseDisplay |    13.622 |
+| FourBitAdderSegmentedChoseDisplay |    17.707 |
 +-----------------------------------+-----------+
 
 

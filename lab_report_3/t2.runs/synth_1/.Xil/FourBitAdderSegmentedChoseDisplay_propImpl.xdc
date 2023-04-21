@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/nimbes/ddca/lab_report_3/t2.srcs/constrs_1/new/const.xdc rfile:../../../t2.srcs/constrs_1/new/const.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/alik/repos/DDCA/lab_report_3/t2.srcs/constrs_1/new/const.xdc rfile:../../../t2.srcs/constrs_1/new/const.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN V17 [get_ports {a[0]}]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]

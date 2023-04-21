@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Thu Mar 30 12:34:48 2023
-| Host         : machina running 64-bit Pop!_OS 22.04 LTS
+| Date         : Wed Apr 19 16:44:51 2023
+| Host         : goon running 64-bit EndeavourOS Linux
 | Command      : report_drc -file FiniteStateMachine_drc_routed.rpt -pb FiniteStateMachine_drc_routed.pb -rpx FiniteStateMachine_drc_routed.rpx
 | Design       : FiniteStateMachine
 | Device       : xc7a35tcpg236-1
@@ -55,7 +55,7 @@ Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net m2/E[0] is a gated clock net sourced by a combinational pin m2/state_n_reg[2]_i_2/O, cell m2/state_n_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net m1/state_n_inferred__0/i__n_0 is a gated clock net sourced by a combinational pin m1/state_n_inferred__0/i_/O, cell m1/state_n_inferred__0/i_. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning

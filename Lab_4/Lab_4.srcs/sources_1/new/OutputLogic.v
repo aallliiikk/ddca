@@ -39,6 +39,11 @@ module OutputLogic(
                         ledLeft <= 3'b000;
                         ledRight <= 3'b111;
                         end
+                        
+            default : begin
+                        ledLeft <= 3'b000;
+                        ledRight <= 3'b000;
+                        end
         endcase
         
         end

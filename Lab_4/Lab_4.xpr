@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="/home/nimbes/ddca/Lab_4/Lab_4.xpr">
+<Project Version="7" Minor="44" Path="/home/alik/repos/DDCA/Lab_4/Lab_4.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="6d203bcddf68407095fa30a880543690"/>
