@@ -1,0 +1,297 @@
+
+*** Running vivado
+    with args -log dimmedLed.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dimmedLed.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source dimmedLed.tcl -notrace
+Command: synth_design -top dimmedLed -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 248793 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1866.805 ; gain = 200.719 ; free physical = 913 ; free virtual = 7143
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dimmedLed' [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/dimmedLed.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/imports/new/clk_div.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/imports/new/clk_div.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ledStateRegister' [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/ledStateRegister.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ledStateRegister' (2#1) [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/ledStateRegister.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ledNextStateLogic' [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/ledNextStateLogic.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Decoder4to16' [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/4-16Decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder4to16' (3#1) [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/4-16Decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ledNextStateLogic' (4#1) [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/ledNextStateLogic.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin /home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/dimmedLed.v-44.21 with 1st driver pin 'GND' [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/dimmedLed.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin /home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/dimmedLed.v-44.21 with 2nd driver pin 'VCC' [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/dimmedLed.v:44]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net /home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/dimmedLed.v-44.21 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/dimmedLed.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin /home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/dimmedLed.v-41.12 with 1st driver pin 'GND' [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/dimmedLed.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin /home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/dimmedLed.v-41.12 with 2nd driver pin 'VCC' [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/dimmedLed.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net /home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/dimmedLed.v-41.12 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/dimmedLed.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'dimmedLed' (5#1) [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/sources_1/new/dimmedLed.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1928.555 ; gain = 262.469 ; free physical = 938 ; free virtual = 7168
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1928.555 ; gain = 262.469 ; free physical = 940 ; free virtual = 7170
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1928.555 ; gain = 262.469 ; free physical = 940 ; free virtual = 7170
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1928.555 ; gain = 0.000 ; free physical = 940 ; free virtual = 7170
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/constrs_1/imports/constr/basys3Constraints.xdc]
+Finished Parsing XDC File [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/constrs_1/imports/constr/basys3Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nimbes/ddca/dimmedLed/dimmedLed.srcs/constrs_1/imports/constr/basys3Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dimmedLed_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dimmedLed_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2061.289 ; gain = 0.000 ; free physical = 860 ; free virtual = 7090
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2061.289 ; gain = 0.000 ; free physical = 860 ; free virtual = 7090
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2061.289 ; gain = 395.203 ; free physical = 920 ; free virtual = 7151
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2061.289 ; gain = 395.203 ; free physical = 920 ; free virtual = 7151
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2061.289 ; gain = 395.203 ; free physical = 920 ; free virtual = 7151
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2061.289 ; gain = 395.203 ; free physical = 914 ; free virtual = 7145
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ledStateRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module ledNextStateLogic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'reg1/state_p_reg[1]' (FDR) to 'reg1/state_p_reg[2]'
+INFO: [Synth 8-3886] merging instance 'reg1/state_p_reg[3]' (FDR) to 'reg1/state_p_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg1/state_p_reg[2] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2061.289 ; gain = 395.203 ; free physical = 899 ; free virtual = 7134
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2061.289 ; gain = 395.203 ; free physical = 779 ; free virtual = 7014
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2061.289 ; gain = 395.203 ; free physical = 778 ; free virtual = 7012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2061.289 ; gain = 395.203 ; free physical = 770 ; free virtual = 7005
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2061.289 ; gain = 395.203 ; free physical = 770 ; free virtual = 7005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2061.289 ; gain = 395.203 ; free physical = 770 ; free virtual = 7005
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2061.289 ; gain = 395.203 ; free physical = 770 ; free virtual = 7005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2061.289 ; gain = 395.203 ; free physical = 770 ; free virtual = 7005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2061.289 ; gain = 395.203 ; free physical = 770 ; free virtual = 7005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2061.289 ; gain = 395.203 ; free physical = 770 ; free virtual = 7005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     1|
+|4     |LUT5   |     3|
+|5     |LUT6   |     4|
+|6     |FDRE   |    26|
+|7     |IBUF   |     5|
+|8     |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+-----------------+------+
+|      |Instance  |Module           |Cells |
++------+----------+-----------------+------+
+|1     |top       |                 |    63|
+|2     |  divider |clk_div          |    38|
+|3     |  reg1    |ledStateRegister |     3|
++------+----------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2061.289 ; gain = 395.203 ; free physical = 770 ; free virtual = 7005
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 2061.289 ; gain = 262.469 ; free physical = 825 ; free virtual = 7060
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2061.297 ; gain = 395.203 ; free physical = 825 ; free virtual = 7060
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2061.297 ; gain = 0.000 ; free physical = 886 ; free virtual = 7120
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2061.297 ; gain = 0.000 ; free physical = 844 ; free virtual = 7079
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 0 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 2061.297 ; gain = 614.336 ; free physical = 970 ; free virtual = 7205
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2061.297 ; gain = 0.000 ; free physical = 970 ; free virtual = 7205
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/nimbes/ddca/dimmedLed/dimmedLed.runs/synth_1/dimmedLed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dimmedLed_utilization_synth.rpt -pb dimmedLed_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  4 13:42:00 2023...
