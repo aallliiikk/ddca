@@ -59,28 +59,7 @@ main:
 	     addi   $t0, $0, 7	# right_image[7]	
 	     sw      $t0, 0x40($s0)
 	     addi   $t0, $0, 11	# right_image[8]	
-	     sw      $t0, 0x44($s0)
-	     
-	     addi   $t0, $0, 0	# sad_array[0]
-	     sw      $t0, 0x48($s0)
-	     addi   $t0, $0, 0	# sad_array[1]
-	     sw      $t0, 0x4C($s0)
-	     addi   $t0, $0, 0	# sad_array[2]
-	     sw      $t0, 0x50($s0)
-	     addi   $t0, $0, 0	# sad_array[3]
-	     sw      $t0, 0x54($s0)
-	     addi   $t0, $0, 0	# sad_array[4]
-	     sw      $t0, 0x58($s0)
-	     addi   $t0, $0, 0	# sad_array[5]
-	     sw      $t0, 0x5C($s0)
-	     addi   $t0, $0, 0	# sad_array[6]
-	     sw      $t0, 0x60($s0)
-	     addi   $t0, $0, 0	# sad_array[7]
-	     sw      $t0, 0x64($s0)
-	     addi   $t0, $0, 0	# sad_array[8]
-	     sw      $t0, 0x68($s0)
-	     
-	     
+	     sw      $t0, 0x44($s0)   
 	     
 	# TODO4: Loop over the elements of left_image and right_image
 	
@@ -108,7 +87,7 @@ loop:
 	
 	
 	# Call abs_diff
-	j abs_diff
+	jal abs_diff
 	
 	#Store the returned value in sad_array[i]
 	add $s3, $s3, $s2
@@ -155,11 +134,11 @@ end_loop:
 	add $a1, $a1, $s2 
 	
 	# Call to funtion
-	j recursive_sum
+	jal recursive_sum
 	  
 	
 	#Store the returned value in $t2
-	addi $t2, $ra, 0
+	addi $t2, $v0, 0
 	
 
 end:	
