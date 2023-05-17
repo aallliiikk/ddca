@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab_6_testbench.srcs/sources_1/imports/new/Alu.v" \
+"../../../../lab_6_testbench.srcs/sources_1/imports/new/Arithmetic.v" \
+"../../../../lab_6_testbench.srcs/sources_1/imports/new/Logic.v" \
+"../../../../lab_6_testbench.srcs/sim_1/imports/lab6_files/ALU_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

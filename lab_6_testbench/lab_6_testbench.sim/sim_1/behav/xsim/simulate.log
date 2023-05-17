@@ -1,0 +1,9 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+WARNING: File /home/alik/lab_6_testbench/lab_6_testbench.sim/sim_1/behav/xsim/testvectors_hex.txt referenced on /home/alik/repos/DDCA/lab_6_testbench/lab_6_testbench.srcs/sim_1/imports/lab6_files/ALU_test.v at line 67 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+   1 tests completed with    0 errors
+$finish called at time : 100 ns : File "/home/alik/repos/DDCA/lab_6_testbench/lab_6_testbench.srcs/sim_1/imports/lab6_files/ALU_test.v" Line 112
+   2 tests completed with    0 errors
+$finish called at time : 300 ns : File "/home/alik/repos/DDCA/lab_6_testbench/lab_6_testbench.srcs/sim_1/imports/lab6_files/ALU_test.v" Line 112
+   3 tests completed with    0 errors
+$finish called at time : 500 ns : File "/home/alik/repos/DDCA/lab_6_testbench/lab_6_testbench.srcs/sim_1/imports/lab6_files/ALU_test.v" Line 112

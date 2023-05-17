@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab_4.srcs/sources_1/new/NextStateLogic.v" \
+"../../../../Lab_4.srcs/sources_1/new/OutputLogic.v" \
+"../../../../Lab_4.srcs/sources_1/new/StateRegister.v" \
+"../../../../Lab_4.srcs/sources_1/new/clk_div.v" \
+"../../../../Lab_4.srcs/sources_1/new/FiniteStateMachine.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

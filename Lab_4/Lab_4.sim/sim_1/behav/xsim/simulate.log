@@ -1,0 +1,4 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+WARNING: Too many words specified in data file testvec.txt
+$finish called at time : 481 ns : File "/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sim_1/new/FSM_test.v" Line 71

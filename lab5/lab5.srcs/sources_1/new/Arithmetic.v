@@ -46,7 +46,7 @@ module Arithmetic(
     wire [31:0] AddOut;
     
     Adder32 Adder(AluOp[1],A,Bprime,AddOut);
-    
+//    assign AddOut = A+Bprime+AluOp[1];
     wire [31:0] Extended;
     
     assign Extended = {32{AddOut[31]}};

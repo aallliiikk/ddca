@@ -22,10 +22,20 @@ forward:
    lw $t0,0($t4)
    sw  $t0, 0x7ff0($0) # send the value to the display
    
+   # addi $t6, $t3, 0
+   lw $t7, 0x7ff4($0)
+   addi $s0, $t7, 1
+   # div $t7, $t7, $t3
+   # add $t6, $t6, $t7
+   
    addi $t4, $t4, 4 # increment to the next address
    addi $t2, $0, 0 # clear $t2 counter
 
 wait:
-   beq $t2,$t3,forward	
-   addi  $t2, $t2, 1     # increment counter
+   slt $t6, $t2, $t3 # maybe other way round
+   # beq $t2,$t3,forward	
+    beqz $t6, forward
+   
+   #mul  $t7, $t7, 
+   add  $t2, $t2, $s0     # increment counter
    j wait

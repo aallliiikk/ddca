@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/FiniteStateMachine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FiniteStateMachine
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/NextStateLogic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NextStateLogic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/StateRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sim_1/new/FSM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_test

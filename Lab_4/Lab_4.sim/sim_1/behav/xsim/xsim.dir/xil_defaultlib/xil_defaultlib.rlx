@@ -1,0 +1,11 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/home/alik/repos/DDCA/Lab_4/Lab_4.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sim_1/new/FSM_test.v,1683913553,verilog,,,,FSM_test,,,,,,,,
+/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/FiniteStateMachine.v,1683912131,verilog,,/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/NextStateLogic.v,,FiniteStateMachine,,,,,,,,
+/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/NextStateLogic.v,1683905625,verilog,,/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/StateRegister.v,,NextStateLogic,,,,,,,,
+/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/OutputLogic.v,1683905661,verilog,,/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/StateRegister.v,,OutputLogic,,,,,,,,
+/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/StateRegister.v,1683905627,verilog,,/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sim_1/new/FSM_test.v,,StateRegister,,,,,,,,
+/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sources_1/new/clk_div.v,1681913222,verilog,,/home/alik/repos/DDCA/Lab_4/Lab_4.srcs/sim_1/new/FSM_test.v,,clk_div,,,,,,,,
