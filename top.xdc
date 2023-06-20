@@ -42,3 +42,6 @@ set_property PACKAGE_PIN V16 [get_ports speed[1]]
 set_property PACKAGE_PIN V17 [get_ports speed[0]]
 
 set_property IOSTANDARD LVCMOS33 [get_ports speed]
+
+set_property PACKAGE_PIN V18 [get_ports direction]
+set_property IOSTANDARD LVCMOS33 [get_ports direction]
