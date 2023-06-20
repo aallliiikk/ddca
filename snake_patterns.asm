@@ -17,6 +17,11 @@ loopcnt: .word 0x001e8484
 restart:   
    addi $t4,$0,0
 
+move:
+   lw $t0,0x7ff8($0)
+   beqz $t0, forward
+   bnez $t0,backward
+
 forward:
    beq $t5,$t4, restart
    lw $t0,0($t4)
@@ -31,10 +36,22 @@ forward:
    addi $t4, $t4, 4 # increment to the next address
    addi $t2, $0, 0 # clear $t2 counter
 
+   j wait
+
+backward:
+   beq $t4,$0,restart
+   lw $t0,0($t4)
+   sw $t0, 0x7ff0($0)
+   
+   addi $t4, $t4, -4 # increment to the next address
+   addi $t2, $0, 0 # clear $t2 counter
+
+   j wait
+
 wait:
    slt $t6, $t2, $t3 # maybe other way round
    # beq $t2,$t3,forward	
-    beqz $t6, forward
+    beqz $t6, move
    
    #mul  $t7, $t7, 
    add  $t2, $t2, $s0     # increment counter
